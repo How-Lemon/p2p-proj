@@ -103,6 +103,7 @@ function createNewPeer() {
         getUserMedia({ video: true, audio: true }, function (stream) {
             var call = peer.call(newConn.peer, stream);
             call.on('stream', function (remoteStream) {
+                console.log("user streaming");
                 // Show stream in some video/canvas element.
                 console.log(remoteStream);
                 video.srcObject = remoteStream;
@@ -139,6 +140,7 @@ function createConnection(roomID) {
 
         var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
         peer.on('call', function (call) {
+            console.log("room calling");
             getUserMedia({ video: true, audio: true }, function (stream) {
                 call.answer(stream); // Answer the call with an A/V stream.
                 call.on('stream', function (remoteStream) {
