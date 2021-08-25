@@ -1,0 +1,50 @@
+.message{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 10px;
+    clear: both;
+    float: left;
+    display: box;
+    max-width: 420px;
+    word-wrap:break-word;
+    margin-bottom: 5px;
+}
+#msgbox {
+    margin:10px;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    border-color: darkgray;
+    border-style: solid;
+    margin-bottom: 0;
+    overflow-y: scroll;
+}
+#input {
+    width:524.8px;
+    margin:10px;
+    margin-top: 0;
+    padding:10px;
+    display: box;
+}
+span.self{
+    background-color: #a1ff71;
+    border-color: goldenrod;
+    float: right !important; 
+}
+span.other{
+    background-color: lavender;
+    border-color: gray;
+}
+.info{
+    font-size: 8px;
+    color: rgb(191, 191, 191);
+    float: left; 
+    clear:right;
+    margin: 0px 5px;
+}
+.info.self{
+    float: right !important; 
+    clear:left !important;
+    text-align: right;
+}
